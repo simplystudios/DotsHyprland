@@ -1,0 +1,77 @@
+# version: 1.0.0
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+continuation_prompt = "[▸▹ ](dimmed white)"
+
+format = """
+$directory\
+
+$fill \
+
+$git_branch\
+${custom.flutter_version}\
+$dart\
+$java\
+$gradle\
+$ruby\
+
+$line_break\
+
+$sudo\
+$character"""
+
+[character]
+# format = "[►](bright-yellow) "
+format = "[❯](bright-yellow) "
+
+[custom.flutter_version]
+description = "Flutter version"
+command = "grep -o '\"flutter\": \"[^\"]*\"' .fvmrc | grep -o '[0-9.]*'"
+detect_files = [".fvmrc"]
+symbol = ""
+format = '[ $symbol $output]($style)'
+
+[dart]
+symbol = ""
+format = " [$symbol $version ]($style)"
+
+[directory]
+truncation_length = 999
+truncate_to_repo = false
+read_only = ""
+use_os_path_sep = true
+style = "bold blue"
+format = '[$path ]($style)'
+
+[fill]
+symbol = '-'
+style = "dimmed black"
+
+[git_branch]
+format = "[$symbol $branch]($style)"
+symbol = ""
+style = "bold bright-cyan"
+only_attached = true
+
+[gradle]
+format = '[ $symbol $version]($style)'
+symbol = ""
+
+[java]
+symbol = ""
+style = "bold dimmed white"
+format = "[( [$symbol](white) $version )]($style)"
+
+[ruby]
+format = "[$symbol $version]($style)"
+symbol = ""
+style = "bold red"
+
+[sudo]
+format = "[$symbol]($style)"
+style = "bold bright-purple"
+symbol = "⚡"
+disabled = false

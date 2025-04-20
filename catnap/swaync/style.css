@@ -1,0 +1,199 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+/* Global font and text styles */
+* {
+    all: unset;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    color: #ffffff; /* Default text color */
+}
+
+/* Control Center and Notification Window */
+.control-center,
+.notification {
+    background-color: rgba(
+        var(--color1-r),
+        var(--color1-g),
+        var(--color1-b),
+        0.4
+    ); /* Transparent background using pywal's color */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Individual Notification Styles */
+.notification {
+    margin: 4px;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+.notification-content {
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Close Button */
+.close-button {
+    background: var(--color4); /* Pywal color */
+    color: #32302f;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 0px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.close-button:hover {
+    background: var(--color5); /* Hover color */
+    transition: all 0.15s ease-in-out;
+    border: none;
+}
+
+/* Notification Action Button */
+.notification-action {
+    color: #ebdbb2;
+    border: 2px solid #85796f;
+    border-top: none;
+    border-radius: 0px;
+    background: #32302f;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    background: #32302f;
+}
+
+/* Summary Text */
+.summary {
+    padding-top: 7px;
+    font-size: 13px;
+    color: var(--color2); /* Pywal color */
+}
+
+/* Time Text */
+.time {
+    font-size: 11px;
+    color: var(--color3); /* Pywal color */
+    margin-right: 24px;
+}
+
+/* Body Text */
+.body {
+    font-size: 12px;
+    color: var(--color2); /* Pywal color */
+}
+
+/* Control Center Styling */
+.control-center {
+    background: rgba(
+        var(--color0-r),
+        var(--color0-g),
+        var(--color0-b),
+        0.7
+    ); /* Semi-transparent background */
+    border: 2px solid #85796f;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Floating Notifications */
+.floating-notifications {
+    background: rgba(
+        0,
+        0,
+        0,
+        0.3
+    ); /* Slight transparency for floating notifications */
+}
+
+/* Widget Title */
+.widget-title {
+    color: var(--color1); /* Pywal color */
+    background: rgba(27, 27, 43, 0.8); /* Darker background for widget titles */
+    padding: 5px 10px;
+    margin: 10px 10px 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Widget Buttons */
+.widget-title > button {
+    font-size: 1rem;
+    color: var(--color1); /* Pywal color */
+    background: rgba(27, 27, 43, 0.8); /* Dark background for buttons */
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.widget-title > button:hover {
+    background: var(--color4); /* Hover color */
+    color: #32302f;
+}
+
+/* Do Not Disturb Widget */
+.widget-dnd {
+    background: rgba(27, 27, 43, 0.8);
+    padding: 5px 10px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: large;
+    color: #f2e5bc;
+}
+
+/* MPRIS Widget */
+.widget-mpris {
+    color: var(--color5); /* Pywal color */
+    background: transparent;
+    padding: 5px 10px 0px 0px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 0px;
+}
+
+.widget-mpris > box > button {
+    border-radius: 5px;
+}
+
+.widget-mpris-player {
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+/* Buttons Grid */
+.widget-buttons-grid {
+    font-size: x-large;
+    padding: 10px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 5px;
+    background: rgba(27, 27, 43, 0.8);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    margin: 5px;
+    background: rgba(50, 50, 50, 0.5); /* Slightly transparent for buttons */
+    border-radius: 5px;
+    color: var(--color1); /* Pywal color */
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: var(--color4); /* Hover color */
+    color: #32302f;
+}
+
+/* Menubar */
+.widget-menubar > box > .menu-button-bar > button {
+    border: none;
+    background: transparent;
+}
+
+/* Topbar Buttons */
+.topbar-buttons > button {
+    border: none;
+    background: transparent;
+}

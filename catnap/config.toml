@@ -1,0 +1,51 @@
+# This is the configuration file for catnap.
+# Here you can configure the stat colors,
+# stat names, stat icons and more!
+#
+# https://github.com/iinsertNameHere/catnap
+
+##############################################
+##          FetchInfo stats Config          ##
+##############################################
+
+
+[stats]
+username  = {icon = " ", name = "user", color = "(BE)"}
+distro    = {icon = " ", name = "distro", color = "(BE)"}
+desktop   = {icon = " ", name = "desktop", color = "(BE)"}
+kernel    = {icon = " ", name = "kernel", color = "(BE)"}
+terminal  = {icon = " ", name = "term", color = "(BE)"}
+disk_0    = {icon = " ", name = "disk", color = "(BE)"}
+uptime    = {icon = " ", name = "uptime", color = "(BE)"}
+#hostname  = {icon = " ", name = "hostname", color = "(YW)"}
+#shell     = {icon = " ", name = "shell", color = "(MA)"}
+# packages  = {icon = " ", name = "packages", color = "(RD)"}  # WARNING: Resource Intensive
+# weather   = {icon = " ", name = "weather", color = "(BE)"} # Requires curl and an emoji font. | WARNING: Resource Intensive
+# gpu       = {icon = "󱔐 ", name = "gpu", color = "(MA)"}      # WARNING: Resource Intensive
+# cpu       = {icon = " ", name = "cpu", color = "(RD)"}
+# battery   = {icon = " ", name = "battery", color = "(GN)"}
+# memory    = {icon = " ", name = "memory", color = "(YW)"}
+# The following stats do not work on MacOS and the BSDs.
+sep_color = "SEPARATOR"
+colors    = {icon = " ", name = "colors", color = "!DT!", symbol = ""}
+
+##############################################
+##               Misc Config                ##
+##############################################
+[misc]
+borderstyle = "noborder"
+layout = "ArtOnTop" # [Inline, ArtOnTop, StatsOnTop]
+stats_margin_top = 0
+location ="Delhi" # Used for fetching weather; leave empty to use the location of your IP; check https://wttr.in/:help for supported location types
+
+[misc.figletLogos] # Requires Figlet.
+enable = true
+color  = "(BE)"
+font   = "/home/punchoneman/Downloads/bmne.flf"
+margin = [0,0, 0,]
+
+[misc.imageMode] # Requires Viu.
+enable = false
+path   = "/home/punchoneman/Downloads/archlogo.png" # Please only use absolute paths.
+scale  = 22
+margin = [0, 5,0,]
