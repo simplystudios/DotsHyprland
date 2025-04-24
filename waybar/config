@@ -2,9 +2,9 @@
   "layer": "top",
   "position": "top",
   "reload_style_on_change": true,
-  "modules-left": [ "clock", "custom/pacman", "tray","custom/separator1", "custom/player"],
+  "modules-left": [ "clock", "custom/pacman", "tray",],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["group/expand", "bluetooth", "network", "battery","custom/notification", "custom/separator1",  "custom/power"],
+  "modules-right": ["group/expand", "custom/separator1", "bluetooth", "network", "battery","custom/notification", "custom/separator1",  "custom/power"],
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -28,6 +28,11 @@
 "hyprland/window": {
   "max-length": 10,
   "tooltip": false
+},
+
+"custom/picker":{
+"format": " ",
+"on-click":"hyprpicker -a"
 },
 
 "custom/separator1": {
@@ -143,7 +148,7 @@
   },
 
   "custom/colorpicker": {
-    "format": "{}",
+    "format": " ",
     "return-type": "json",
     "interval": "once",
     "exec": "~/.config/waybar/scripts/colorpicker.sh -j",

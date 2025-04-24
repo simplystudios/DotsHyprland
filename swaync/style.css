@@ -6,7 +6,7 @@
 
 @define-color theme_fg rgba(248, 248, 252, 0.98); /* Primary Text */
 @define-color theme_fg_secondary rgba(215, 220, 225, 0.78); /* Secondary Text */
-@define-color theme_bg rgba(22, 22, 28, 0.22); /* Panel/Background */
+@define-color theme_bg rgba(30, 37, 38, 0.6); /* Panel/Background */
 @define-color popup_bg rgba(20, 25, 25, 0.5); /* Floating Notification Background */
 @define-color module_bg rgba(20, 20, 20, 0.46); /* Default Module Background */
 @define-color module_hover_bg rgba(210, 215, 225, 0.35); /* Module Hover */
